@@ -17,7 +17,7 @@ a{
 
 .wrapper{
     width:95%;
-    margin: 0 1rem;
+    margin: 0 1;
 }
 
 .row-flex {
@@ -136,6 +136,13 @@ a{
     
 }
 
+.chevron-hidden {
+    height: 20px;
+    width: 20px;
+    margin-top: 1px;
+    display: none;
+}
+
 /* Contenido */
 
 #content {
@@ -204,4 +211,21 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: bottom;
+  }
+
+  /* Responsiveness */
+
+  @media screen and (max-width:768px) {
+    #notifications{
+        display:none;
+    }
+
+    #messages{
+        display:none;
+    }
+
+    .chevron-hidden {
+        display: inline;
+        cursor: pointer;
+    }
   }
